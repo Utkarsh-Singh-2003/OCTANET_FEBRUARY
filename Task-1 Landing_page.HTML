@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+    header {
+    background-color: #2c3e50; /* Purplish-pink color */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1, header h2, header h3 {
+    color: #fff; /* White text color */
+    text-align: center;
+}
+
+
+
+    section {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            width: calc(48% - 20px);
+            margin-top: 50px;
+            border-radius: 5px;
+            overflow: hidden;
+            color: #333;
+            padding: 20px;
+            text-align: center;
+            color: #fff; /* White text color */
+        }
+
+        .column:hover h1 {
+            color: #ff7f0e;
+            transform: scale(1.1);
+            transition: transform 0.5s ease;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #f2400f;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+
+        .cta-button:hover {
+            background-color: #0fed6b;
+            transform: scale(1.1);
+            transition: transform 0.5s ease;
+        }
+
+
+        /* Different background images for each section */
+        body-section:nth-of-type(1) {
+            background-image: url('image.jpg');
+            height: 700px; 
+            font-family: 'Brush Script MT', cursive; /* Use Brush Script font */
+            font-size: 48px;
+        }
+        
+
+        section:nth-of-type(2) {
+
+            background-image: url('img1.jpg');
+        }
+
+        section:nth-of-type(3) {
+            background-image: url('img2.jpg');
+        }
+
+        section:nth-of-type(4) {
+            background-image: url('img3.jpg');
+        }
+
+        .first-section {
+            background-image: url('image.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            height: 700px; /* Adjust the height as needed */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .section-content {
+            position: absolute;
+            text-align: center;
+        }
+        
+        .section-text {
+            font-family: 'Brush Script MT', cursive; /* Use Brush Script font */
+            font-size: 175px; /* Adjust the font size as needed */
+            color: #f8d409; /* Text color */
+            padding: 20px; 
+            border-radius: 10px; /* Add border radius for better aesthetics */
+            transition: color 0.3s ease; /* Smooth transition for color change */
+        }
+        
+        .section-text:hover .highlight {
+            color: #ff7f0e; /* Orangish-brown color */
+        }
+        
+
+        .header-link {
+            color: #fff;
+            margin-right: 10px;
+            transition: color 0.3s ease;
+            font-size: 18px;
+        }
+    
+        .header-link:hover {
+            color: #ff7f0e; /* Orangish-red color */
+        }
+
+        .footer-section {
+            background-color: #2c3e50; /* Blackish-blue background */
+            color: #fff; /* White text color */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-link {
+            color: #fff;
+            margin-right: 10px;
+            transition: color 0.3s ease;
+            font-size: 16px; /* Font size for footer links */
+        }
+
+        .footer-link:hover {
+            color: #ff7f0e; /* Orangish-red color */
+        }
+
+        .quick-services {
+            margin-top: 20px;
+        }
+
+        .quick-service-item {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+
+        .quick-services:hover {
+            color: #ff7f0e;
+        }
+     </style>
+</head>
+<body>
+    <header>
+        <div style="display: flex; justify-content: flex-end;">
+            <a href="#" class="header-link">Home</a>
+            <a href="#" class="header-link">Rewards</a>
+            <a href="#" class="header-link">Help</a>
+        </div>
+        <h1 >Welcome</h1>
+        <p>The Ultimate Grocery Store</p>
+    </header>
+
+    <section class="first-section">
+            <div class="section-content">
+                <h1 class="section-text">Everything you need is <span class="highlight">here</span></h1>
+            </div>
+    </section>
+
+    
+
+    <section class="container">
+        <div class="column">
+            <h1>Fruits</h1>
+            <p>Find the freshest fruits from around the world, delivered right to your doorstep.</p>
+            <button class="cta-button">Shop Now</button>	
+        </div>
+
+        <div class="column">
+            <h1>Vegetables</h1>
+            <p>Explore a wide variety of seasonal vegetables sourced directly from local farmers.</p>
+            <button class="cta-button">Shop Now</button>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="column">
+            <h1>Dairy & Eggs</h1>
+            <p>Discover farm-fresh dairy products and organic eggs for your daily needs.</p>
+            <button class="cta-button">Shop Now</button>
+        </div>
+
+        <div class="column">
+            <h1>Meat & Seafood</h1>
+            <p>Indulge in high-quality meat cuts and fresh seafood for your culinary adventures.</p>
+            <button class="cta-button">Shop Now</button>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="column">
+            <h1>Wheat and Bread</h1>
+            <p>Elevate Your Baking Experience with Fresh Ingredients</p>
+	    <button class="cta-button">Shop Now</button>
+        </div>
+
+        <div class="column">
+            <h1>Cereal and pulses</h1>
+            <p>Nourish Your Body with Wholesome Staples</p>
+            <button class="cta-button">Shop Now</button>
+        </div>
+    </section style="background-image= url()";>
+    <footer class="footer-section">
+        <section class="footer-section">
+            <p>Quick Services</p>
+            <div class="quick-services">
+                <div class="quick-service-item">
+                    <i class="ri-truck-line"></i> Fast Delivery
+                </div>
+                <div class="quick-service-item">
+                    <i class="ri-shield-user-line"></i> Secure Payment
+                </div>
+                <div class="quick-service-item">
+                    <i class="ri-customer-service-line"></i> 24/7 Customer Support
+                </div>
+            </div>
+            <div>
+                <p>Contact</p>
+                <div class="quick-services">
+                    <div class="quick-service-item">
+                        <i class="ri-twitter-x-fill"></i> Twitter
+                    </div>
+                    <div class="quick-service-item">
+                        <i class="ri-linkedin-box-fill"></i> Linkedin
+                    </div>
+                    <div class="quick-service-item">
+                        <i class="ri-mail-line"></i> Gmail
+                    </div>  
+                </div>
+            </div>
+            <p></p>
+            <div>
+                <a href="#" class="footer-link">Terms of Service</a>
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link">FAQ</a>
+                <a href="#" class="footer-link">Contact Us</a>
+            </div>
+            <div>
+                <p>&copy; 2024 FreshGrocer. All rights reserved.</p>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
