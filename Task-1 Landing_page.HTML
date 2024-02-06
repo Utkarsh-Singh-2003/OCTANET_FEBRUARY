@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+       header {
+    background-color: #d35400; /* Purplish-pink color */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1, header h2, header h3 {
+    color: #fff; /* White text color */
+    text-align: center;
+}
+
+
+
+       section {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            width: calc(48% - 20px);
+            margin-top: 50px;
+            border-radius: 5px;
+            overflow: hidden;
+            color: #333;
+            padding: 20px;
+            text-align: center;
+            color: #fff; /* White text color */
+        }
+
+        .column:hover h2 {
+            transform: scale(1.5);
+            transition: transform 0.5s ease;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2ecc71;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+
+        .cta-button:hover {
+            background-color: #27ae60;
+            transform: scale(1.5);
+            transition: transform 0.5s ease;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Different background images for each section */
+        section:nth-of-type(1) {
+            background-image: url('img1.jpg');
+        }
+
+        section:nth-of-type(2) {
+            background-image: url('img3.jpg');
+        }
+
+        section:nth-of-type(3) {
+            background-image: url('img2.jpg');
+        }
+     </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome</h1>
+        <p>Welcome to our Landing  Page</p>
+    </header>
+
+    <section class="container">
+        <div class="column">
+            <h2>About Us</h2>
+            <p style="text-align: left;">we are a group of enthusiast programmers who are always ready in order to learn something new.</p>
+            <p style="text-align: left;">we always make sure that we are always updated with current trend, so that we can stand confidently in this compitative world.</p>
+        </div>
+
+        <div class="column">
+            <h2>Courses</h2>
+            <p>we provide services like: </p>
+            <p>Data Analytics</p>
+            <p>Web Development</p>
+            <p>Cyber Security</p>
+            <p>Mobile Application Development</p>
+            <p>Machine Learning</p>
+            <p>Data Science</p>
+            <p>Artificial Intelligence</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="column">
+            <h2>Popular</h2>
+            <p>We provide with multiple popular programs</p>
+            <p>Mentor-Support program</p>
+            <p>Offline-Interactive Program</p>
+            <p>Online-Interactive Program</p>
+        </div>
+
+        <div class="column">
+            <h2>Latest</h2>
+            <p>We provide with latest courses</p>
+            <p>Prompt Engineering</p>
+            <p>Deep Learning</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="column">
+            <h2>Features</h2>
+            <p>Consistent Mentor Guidence</p>
+            <p>Interactive Tools</p>
+            <p>Consistent Assessments</p>
+        </div>
+
+        <div class="column">
+            <h2>Contact</h2>
+            <p>Contact us using Linkedin page.</p>
+            <p>Contact us using Twitter Handle</p>
+            <p>Contact us using our Mail ID</p>
+            <div>
+                <i class="ri-twitter-x-fill"></i>
+                <i class="ri-linkedin-box-fill"></i>
+                <i class="ri-mail-line"></i>
+            </div>
+            <button class="cta-button">click to contact</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
